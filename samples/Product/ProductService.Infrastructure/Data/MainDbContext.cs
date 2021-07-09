@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using N8T.Infrastructure.EfCore;
-using ProductService.Core.Entities;
+using ProductService.AppCore.Core;
 
 namespace ProductService.Infrastructure.Data
 {
@@ -10,6 +10,7 @@ namespace ProductService.Infrastructure.Data
 
         public MainDbContext(DbContextOptions options) : base(options)
         {
+
         }
 
         public DbSet<Product> Products { get; set; } = default!;
